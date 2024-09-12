@@ -36,7 +36,7 @@ dstport,protocol,tag
 
 ## Protocol Numbers
 
-The script uses protocol numbers as defined by IANA. You can find the full list here:
+The script in protocol_nums.py uses protocol numbers as defined by IANA. You can find the full list here:
 https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml#protocol-numbers-1
 
 ## Usage
