@@ -14,6 +14,7 @@
 ### flow_logs.txt
 
 This file should contain VPC flow logs without a header. The format follows the AWS VPC Flow Logs structure:
+https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html#flow-logs-fields
 
 ```
 version account-id interface-id srcaddr dstaddr srcport dstport protocol packets bytes start end action log-status
