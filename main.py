@@ -72,12 +72,7 @@ def write_output(tag_counts, port_protocol_counts, output_tag_file, output_port_
         for (port, protocol), count in port_protocol_counts.items():
             writer.writerow([port, protocol, count])
 
-def main():
-    # flow_log formate from https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html#flow-logs-fields
-    # 0       1             2            3           4             5        6        7        8        9     10          11          12      13
-    # 2       123456789012  eni-0a1b2c3d 10.0.1.201  198.51.100.2  443      49153    6        25       20000 1620140761  1620140821  ACCEPT  OK 
-    # version account-id    interface-id srcaddr     dstaddr       srcport  dstport  protocol packets  bytes start       end         action  log-status 
-    
+def main():    
     lookup_file = 'look_up.txt'
     flow_log_file = 'flow_logs.txt'
     output_tag_file = './output/tag_counts.txt'
